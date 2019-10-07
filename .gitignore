@@ -11,6 +11,7 @@ logs/
 *.lock
 *.js
 !.autod.conf.js
+!scripts/deploy.js
 
 app/**/*.js
 test/**/*.js

@@ -1,12 +1,10 @@
-sudo: false
 language: node_js
-node_js:
-  - '8'
-before_install:
-  - npm i npminstall -g
-install:
-  - npminstall
+node_js: lts/*
+cache: yarn
+install: skip
 script:
-  - npm run ci
-after_script:
-  - npminstall codecov && codecov
+  - yarn add -D nodemiral
+  - node scripts/deploy.js
+branches:
+  only:
+    - master
