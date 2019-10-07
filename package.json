@@ -23,7 +23,10 @@
   },
   "dependencies": {
     "egg": "^2.6.1",
-    "egg-scripts": "^2.6.0"
+    "egg-scripts": "^2.6.0",
+    "google-translate-api": "^2.3.0",
+    "https": "^1.0.0",
+    "md5": "^2.2.1"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
